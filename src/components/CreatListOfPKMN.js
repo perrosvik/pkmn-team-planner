@@ -1,4 +1,4 @@
-import Pokemon from 'pokemon';
+import Pokemon from '../pokemon';
 
 /* React select needs 'Options' to be on the format [{value: 'value', label: 'Label'}]*/
 function CreatListOfPKMN () {
