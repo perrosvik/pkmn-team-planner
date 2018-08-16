@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './index.css'
-import CardDisplayPKKM from './components/CardDisplayPKMN.js'
+import TeamDisplay from './components/TeamDisplay';
 
 class App extends Component {
   render() {
@@ -14,9 +14,12 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-
-        <CardDisplayPKKM name="Test"/>
-
+      
+        <div className="section">
+        <div className="container">
+          <TeamDisplay/>
+        </div>
+        </div>
       </div>
     );
   }
