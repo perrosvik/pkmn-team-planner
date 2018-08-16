@@ -49,11 +49,11 @@ class CardDisplayPKMN extends Component {
         <p>{error ? error : ''}</p>
         <div className="card-content">
           <div className="media">
-            <div className="media-left">
+            <div className="media-content">
               <figure className="image is-128x128">
                 <img
                   className="is-rounded"
-                  src={pkmnData ? pkmnData.sprites.front_default : ""}
+                  src={pkmnData ? pkmnData.sprites.front_default : 'https://bulma.io/images/placeholders/128x128.png'}
                   alt="Placeholder "
                 />
               </figure>
