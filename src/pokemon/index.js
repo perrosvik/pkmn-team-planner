@@ -1,4 +1,4 @@
-const uniqueRandomArray = require('unique-random-array');
+//const uniqueRandomArray = require('unique-random-array');
 const pokemon = require('./data/en');
 
 const repoUrl = 'https://github.com/sindresorhus/pokemon';
@@ -15,7 +15,7 @@ const languages = new Set([
 	'zh-Hant'
 ]);
 
-const randomNameGenerators = new Map();
+//const randomNameGenerators = new Map();
 
 function getLocalizedList(lang) {
 	if (!lang || lang === 'en') {
@@ -31,7 +31,7 @@ function getLocalizedList(lang) {
 
 exports.all = getLocalizedList;
 
-exports.random = lang => {
+/* exports.random = lang => {
 	if (randomNameGenerators.has(lang)) {
 		return randomNameGenerators.get(lang)();
 	}
@@ -41,7 +41,7 @@ exports.random = lang => {
 	randomNameGenerators.set(lang, random);
 
 	return random();
-};
+}; */
 
 exports.getName = (id, lang) => {
 	const list = getLocalizedList(lang);
